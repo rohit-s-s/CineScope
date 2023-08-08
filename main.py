@@ -15,6 +15,6 @@ def show_movie(id):
     else:
         return render_template('movie.html',movie=movie)
 
-if __name__ == '__app__':
+if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)
 
