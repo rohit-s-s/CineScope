@@ -1,5 +1,5 @@
-# Career-website
-The "Career-Website" is a web application built using Flask, a lightweight Python web framework. It serves as a platform for job openings, allowing users to view available job positions and submit job applications.
+# CineScope
+The "CineScope" is a web application built using Flask, a lightweight Python web framework. It is designed to act as a movie database, allowing users to search for movies, view details about them.
 ## Table of Contents
 - Features
 - Prerequisites
@@ -10,10 +10,8 @@ The "Career-Website" is a web application built using Flask, a lightweight Pytho
 - Dependencies
 
 ## Features
-- View job openings and job details on various pages.
-- Submit job applications through an application form.
-- Receive feedback and confirmation on successful application submission.
-- Modular HTML templates for easier management and consistency.
+- Detailed information about each movie, including its title, release year, genre, and a brief description.
+- The website is designed to work smoothly on both desktop and mobile devices.
 
 ## Prerequisites
 Before running the application, make sure you have the following installed:
@@ -23,11 +21,11 @@ Before running the application, make sure you have the following installed:
 1.Clone the repository:
 
 
-    git clone https://github.com/rohit-s-s/Career-website
+    git clone https://github.com/rohit-s-s/CineScope
 2.Install the necessary packages using pip:
 
 
-    cd career-website
+    cd CineScope
     pip install -r requirements.txt
 3.Create the database schema and tables using database.py. Ensure you have your MySQL/Planetscale Database credentials set up in the file.
 
@@ -50,17 +48,15 @@ The main components of the project are organized as follows:
     ├── main.py            # Flask application main file
     ├── database.py        # Database setup and interactions
     ├── templates/
-    │   ├── about.html
-    │   ├── application_form.html
-    │   ├── application_submitted.html
     │   ├── banner.html
+    │   ├── display.html
     │   ├── footer.html
     │   ├── index.html
-    │   ├── job_pages.html
-    │   ├── jobs.html
-    │   └── navbar.html
+    │   ├── movie.html
+    │   ├── navbar.html
+    │   └── poster.html
     ├── static/
-    │   └── people.jpg, banner.jpg       # images
+    │   └── movie_banner.jpg       # images
     └── requirements.txt   # Dependencies
 ## Dependencies
 The required packages and their versions are listed in the requirements.txt file.
